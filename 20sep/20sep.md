@@ -19,9 +19,9 @@ End Sub
 Function misnotas(n1, n2, n3, n4, n5)
     promedio = (n1 + n2 + n3 + n4 + n5) / 5
     If (promedio > 7) Then
-        misnotas = " CON ESTE PROMEDIO  " & promedio & " APROBO"
+        misnotas = " CON ESTE PROMEDIO  " & promedio & " APRUEBA"
     Else
-        misnotas = " CON ESTE PROMEDIO  " & promedio & " REPROBO"
+        misnotas = " CON ESTE PROMEDIO  " & promedio & " REPRUEBA"
     End If
 
 End Function
