@@ -1,16 +1,14 @@
 ## CODIGO DE PRUEBA CELLS VISUAL BASIC
 
 ```
-Sub inicio ()
-  Hoja2.Cells(4, 2) = Hoja1.Cells(8, 3)
-  Hoja2.Cells(4, 3) = Hoja1.Cells(12, 3)
-  Hoja2.Cells(4, 4) = Hoja1.Cells(16, 3)
-  MsgBox " Registros completados "
-  Hoja1.Cells(8, 3) = ""
-  Hoja1.Cells(12, 3) = ""
-  Hoja1.Cells(16, 3) = ""
+Sub inicio()
+    recibe.Cells(2, 1) = formul.Cells(2, 3)
+    recibe.Cells(2, 3) = formul.Cells(4, 3)
+        MsgBox "COMPLETADO"
+    formul.Cells(2, 3) = ""
+    formul.Cells(4, 3) = ""
+    
 End Sub
-
 ```
 
 
@@ -18,8 +16,8 @@ End Sub
 
 ```
 
-Function misnotas(a1, a2, a3, a4, a5)
-    promedio = (a1 + a2 + a3 + a4 + a5) / 5
+Function misnotas(n1, n2, n3, n4, n5)
+    promedio = (n1 + n2 + n3 + n4 + n5) / 5
     If (promedio > 7) Then
         misnotas = " CON ESTE PROMEDIO  " & promedio & " APROBO"
     Else
